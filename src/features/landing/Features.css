@@ -1,0 +1,15 @@
+.features {
+  background: #fff;
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+.features h2 {
+  color: #1976d2;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.features-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
