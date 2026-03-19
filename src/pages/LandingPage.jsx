@@ -12,6 +12,7 @@ export default function LandingPage() {
       <Hero />
       <HeroStats/>
       <Features />
+      <Footer/>
     </div>
   );
 }

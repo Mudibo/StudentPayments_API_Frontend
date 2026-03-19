@@ -4,11 +4,11 @@ import './Header.fonts.css';
 import { useState } from 'react';
 
 const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
-  { label: 'About Us', href: '#about' },
-  { label: 'Contact Us', href: '#contact' },
-  { label: 'Features', href: '#features' },
-  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'Home', href: '/#home' },
+  { label: 'About Us', href: '/#about' },
+  { label: 'Contact Us', href: '/#contact' },
+  { label: 'Features', href: '/#features' },
+  { label: 'Testimonials', href: '/#testimonials' },
 ];
 
 function ShieldIcon() {
