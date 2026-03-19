@@ -1,7 +1,7 @@
-
 import './Header.css';
 import './Header.fonts.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const NAV_LINKS = [
   { label: 'Home', href: '/#home' },
@@ -110,21 +110,19 @@ export default function Header() {
             >
               {label}
             </a>
-          );
+          ); 
         })}
-        {/* Log In button for mobile dropdown */}
-        {mobileOpen && (
-          <button className="header-btn header-btn-ghost" type="button" style={{ width: '100%', textAlign: 'center', marginTop: 8, fontSize: 15, padding: '10px 12px' }}>Log In</button>
-        )}
       </nav>
 
       {/* Actions (right) - visible except mobile */}
       <div className="header-actions">
-        <button className="header-btn header-btn-ghost" type="button">Log In</button>
-        <button className="header-btn header-btn-primary" type="button">
-          <span className="header-btn-icon"><ArrowIcon /></span>
-          Get Started
-        </button>
+        <Link to="/auth">
+          <button className="header-btn header-btn-primary" type="button">
+            <span className="header-btn-icon"><ArrowIcon /></span>
+              Get Started
+          </button>
+        </Link>
+        
       </div>
     </header>
   );
